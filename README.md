@@ -1,2 +1,2 @@
-# calculator2
-responsive calculator with dynamic color
+# Calculator
+A responsive calculator with dynamic color
