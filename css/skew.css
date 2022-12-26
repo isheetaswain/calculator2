@@ -1,0 +1,25 @@
+/* skew */
+
+:root {
+    --color1: #FFC300;
+}
+
+.container::before {
+    left: 0;
+    transform: skewY(8deg);
+}
+
+.container::after {
+    right: 0;
+    transform: skewY(-8deg);
+}
+
+.container::before , .container::after {
+    content: "";
+    width: 50%;
+    height: 50%;
+    background: var(--color1);
+    position: absolute;
+    bottom: -100px;
+    z-index: -1;
+}
